@@ -4,6 +4,10 @@ import { isValidProp } from "./utils/isValidProp.js"
 import { loadState } from "./utils/Store.js"
 
 class ObservableAppState extends EventEmitter {
+
+  activeQuestion = null
+  activeChoices = []
+  questions = []
   page = ''
 
   /** @type {import('./models/Value.js').Value[]} */
