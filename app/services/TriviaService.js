@@ -47,7 +47,7 @@ class TriviaService {
   }
 
   combineAnswers() {
-    let randomIndex = Math.floor(Math.random() * 4.99)
+    let randomIndex = Math.floor(Math.random() * 3.99)
     console.log(randomIndex)
     AppState.activeQuestion.incorrect.splice([randomIndex], 0, AppState.activeQuestion.correct)
     console.log(AppState.activeQuestion)
